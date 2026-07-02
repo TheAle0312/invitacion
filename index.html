@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catalina Cumple 4 Años</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#87CEEB;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.invitacion{
+    position:relative;
+    width:min(100vw, 454px);
+    aspect-ratio:454/644;
+    background:url("img/invitacion.jpg") center/contain no-repeat;
+}
+
+/* Zona del recuadro blanco */
+.contenido{
+    position:absolute;
+    left:14%;
+    right:14%;
+    top:40%;
+    bottom:17%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    gap:12px;
+}
+
+.nombre{
+    color:#0077cc;
+    font-size:clamp(1.8rem, 5vw, 2.4rem);
+    font-weight:bold;
+    text-shadow:1px 1px 3px rgba(0,0,0,.2);
+}
+
+.edad{
+    color:#ff4081;
+    font-size:clamp(1.4rem, 4vw, 2rem);
+    font-weight:bold;
+}
+
+.asistencia{
+    color:#444;
+    font-size:clamp(1rem, 3.5vw, 1.4rem);
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.btn-whatsapp{
+    margin-top:10px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    background:#25D366;
+    color:white;
+    padding:14px 22px;
+    border-radius:40px;
+    font-size:clamp(0.95rem, 3vw, 1.2rem);
+    font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+    transition:0.3s;
+}
+
+.btn-whatsapp:hover{
+    transform:scale(1.05);
+}
+
+@media (max-width:480px){
+
+    .invitacion{
+        width:100vw;
+        height:100vh;
+        background-size:contain;
+    }
+
+    .contenido{
+        left:13%;
+        right:13%;
+        top:39%;
+        bottom:18%;
+    }
+
+    .btn-whatsapp{
+        width:90%;
+        max-width:280px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="invitacion">
+
+    <div class="contenido">
+
+        <div class="nombre">
+            CATALINA
+        </div>
+
+        <div class="edad">
+            CUMPLE 4 AÑOS
+        </div>
+
+        <div class="asistencia">
+            CONFIRMA TU ASISTENCIA
+        </div>
+
+        <a class="btn-whatsapp"
+           href="https://wa.me/5215543077729?text=Hola,%20confirmo%20mi%20asistencia%20al%20cumpleaños%20de%20Catalina"
+           target="_blank">
+            Confirmar asistencia
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
